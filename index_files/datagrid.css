@@ -1,0 +1,142 @@
+.jlab-row {
+    width: 100%;
+    display: flex;
+}
+
+section .jlab-row.striped:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 1px;
+    top: 0;
+    left: -10px;
+    background-color: #f0f0f0;
+}
+
+section .jlab-row.striped:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 1px;
+    bottom: -1px;
+    left: -10px;
+    background-color: #f0f0f0;
+}
+
+div[class*="jlab-cell-"] {
+    /*display: inline-block;*/
+    box-sizing: border-box;
+    margin: 0 5px;
+}
+
+div[class*="jlab-cell-"].center {
+    margin: auto 5px;
+}
+
+.align-center {
+    text-align: center;
+    margin: auto;
+}
+
+.align-right {
+    width: 100%;
+    text-align: right;
+}
+
+.margin {
+    margin: 5px 0;
+}
+
+.fixed {
+    position: fixed;
+    left: 75%;
+    /*overflow-y:scroll;*/
+    /*overflow-x:hidden;*/
+}
+
+
+.jlab-cell-1 {
+    width: 8.333333%;
+}
+
+.jlab-cell-2 {
+    width: 16.666667%;
+}
+
+.jlab-cell-3 {
+    width: 25%;
+}
+
+.jlab-cell-4 {
+    width: 33.333333%;
+}
+
+.jlab-cell-5 {
+    width: 41.666667%;
+}
+
+.jlab-cell-6 {
+    width: 50%;
+}
+
+.jlab-cell-7 {
+    width: 58.333333%;
+}
+
+.jlab-cell-8 {
+    width: 66.666667%;
+}
+
+.jlab-cell-9 {
+    width: 75%;
+}
+
+.jlab-cell-10 {
+    width: 83.333333%;
+}
+
+.jlab-cell-11 {
+    width: 91.666667%;
+}
+
+.jlab-cell-12 {
+    width: 100%;
+}
+
+.hoverable {
+    padding: 5px 0;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+}
+
+.hoverable:hover {
+    cursor: pointer;
+}
+
+.hoverable:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    background-color: #f0f0f0;
+    z-index: -1;
+    opacity: 0;
+    border: 1px solid #f0f0f0;
+
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hoverable:hover:before {
+    opacity: 1;
+}
+
+.hoverable:hover .regular-checkbox + label {
+    background-color: #f0f0f0;
+}

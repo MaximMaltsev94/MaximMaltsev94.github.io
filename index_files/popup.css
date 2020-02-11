@@ -1,0 +1,81 @@
+.popupBack.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popupBack {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.popup {
+    padding: 10px;
+    background-color: white;
+    font-size: 1em;
+    border: #dbdbdb solid 1px;
+    border-radius: 5px;
+    margin: 70px auto;
+    width: 40%;
+    position: relative;
+    -webkit-transition: opacity 5s ease-in-out;
+    -moz-transition: opacity 5s ease-in-out;
+    -ms-transition: opacity 5s ease-in-out;
+    -o-transition: opacity 5s ease-in-out;
+    transition: opacity 5s ease-in-out;
+}
+
+.popup>.box {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#popupPhone_phoneType, #popupPhone_countryCode, #popupPhone_operatorCode {
+    margin-right: 5px;
+    min-width: 30px;
+    width: 20%;
+}
+
+#popupPhone_phoneNumber, #popupAttachment_fileName {
+    margin-right: 5px;
+    min-width: 100px;
+    width: 40%;
+}
+
+#popupPhone_comment, #popupAttachment_comment {
+    margin-right: 5px;
+    min-width: 100px;
+    width: 100%;
+}
+
+
+input[type="file"] > input[type="button"] {
+    color: white;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ec1c24;
+}
+
+input[type="file"] > input[type="button"]:hover {
+    cursor: pointer;
+    background-color: #e21a22;
+}
+
+input[type="file"] > input[type="button"]:active {
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
